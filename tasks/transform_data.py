@@ -132,7 +132,7 @@ class TransformDataTask(luigi.Task):
         transformed_data = cleaned_data
         # Change distances unit from au -> km
         DISTANCE_COLUMNS = ["distance", "minimum_distance", "maximum_distance"]
-        DISTANCE_CONVERSION = 1_500_000 # 1 au = 1.5 million km
+        DISTANCE_CONVERSION = 150_000_000 # 1 au = 1.5 million km
         for col in DISTANCE_COLUMNS: transformed_data[col] = transformed_data[col].multiply(DISTANCE_CONVERSION)
         
         transformed_data.to_pickle(self.output().path)
