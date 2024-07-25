@@ -1,0 +1,12 @@
+numpy
+pandas
+luigi
+pytz
+matplotlib
+requests
+tabulate
+psycopg2==2.9.9
+dbt-postgres
+streamlit
+sqlalchemy
+python-daemon

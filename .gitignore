@@ -1,0 +1,5 @@
+*test*
+*.pkl
+*_pychache_*
+*venv*
+*.env
