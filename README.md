@@ -1,3 +1,15 @@
-# Close Encounters ETL Project
+# Close Encounters ELT Project
 
-This is a project to build and ETL data pipeline from NASA based on NASA JPL's SBDB Close-Approach Data API.
+This is a project to build and ELT data pipeline from NASA based on NASA JPL's SBDB Close-Approach Data API.
+
+How to run this project locally:
+- Create virtual environment `python -m venv venv`
+- Install requirements.txt `pip install -r requirements.txt`
+- Make a `temp` directory ()
+- If you want to run the task using local scheduler, in `etl.py` file, set `local_scheduler` `FALSE` and then run `./run_etl.sh`
+- If you want to run task using central scheduler and access luigi UI
+    - Set `local_scheduler` `TRUE`
+    - Run this to allow Luigi scheduler interface `sudo ufw allow 8082/tcp`
+    - Run the scheduler by executing `sudo sh -c ". {your-venv}/bin/activate ;luigid --background --port 8082"`
+    - Execute `./run_etl.sh`
+
