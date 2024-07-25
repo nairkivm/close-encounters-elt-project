@@ -1,4 +1,5 @@
 import numpy as np
+from datetime import datetime
 
 import sys
 import os
@@ -40,5 +41,18 @@ class Constants:
         'h':'absolute_magnitude',
         'diameter':'diameter',
         'diameter_sigma':'diameter_sigma'
+    }
+    FILL_VALUES = {
+        'name':'-',
+        'close_approach_time':datetime(1990,1,1),
+        'distance':-1,
+        'dist_min':-1,
+        'dist_max':-1,
+        'v_rel':-1,
+        'v_inf':-1,
+        't_sigma_f':'-',
+        'h':-99999,
+        'diameter':-1,
+        'diameter_sigma':'-'
     }
 

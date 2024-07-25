@@ -94,14 +94,17 @@ class CleanDataTask(luigi.Task):
         
         # Read selected data
         formatted_data = pd.read_pickle(self.input().path)
+        fill_values = Constants.FILL_VALUES
 
         # General formatting
         cleaned_data = formatted_data
-        # Drop na
-        cleaned_data = cleaned_data.dropna()
+        # # Drop na
+        # cleaned_data = cleaned_data.dropna()
+        # Actually, we don't want to drop rows containing na value
+        # Instead, we filled it with some values
+        cleaned_data = cleaned_data.fillna(fill_values)
         # Drop duplicates and keep first value
         cleaned_data = cleaned_data.drop_duplicates(keep="first")
-
         cleaned_data.to_pickle(self.output().path)
 
         # Validate data
