@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 VENV_PATH="${SCRIPT_DIR}/venv/bin/activate"
 source $VENV_PATH
 
-PYTHON_SCRIPT="${SCRIPT_DIR}/main.py"
+PYTHON_SCRIPT="${SCRIPT_DIR}/etl.py"
 
 python "$PYTHON_SCRIPT" >> "${SCRIPT_DIR}/log/logfile.log" 2>&1
 
