@@ -18,8 +18,8 @@ How to run this project locally:
 
 ## Luigi UI
 ![Luigi UI - 1](/luigiui-screenshot-1721875797024.png)
-![Luigi UI - 2](/luigiui-screenshot-1721875797024.png)
-![Luigi UI - 3](/luigiui-screenshot-1721875797024.png)
+![Luigi UI - 2](/luigiui-screenshot-1721875797025.png)
+![Luigi UI - 3](/luigiui-screenshot-1721875797026.png)
 
 ## Dashboard (created via Power BI)
 ![Dashboard created via Power BI](/close-encounters-2-1.png)
