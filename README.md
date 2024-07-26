@@ -2,6 +2,10 @@
 
 This is a project to build and ELT data pipeline from NASA based on NASA JPL's SBDB Close-Approach Data API.
 
+## Dashboard (created via Power BI)
+![Dashboard created via Power BI](/close-encounters-2-1.png)
+
+## How to run locally
 How to run this project locally:
 - Create virtual environment `python -m venv venv`
 - Install requirements.txt `pip install -r requirements.txt`
@@ -20,6 +24,3 @@ How to run this project locally:
 ![Luigi UI - 1](/luigiui-screenshot-1721875797024.png)
 ![Luigi UI - 2](/luigiui-screenshot-1721875797025.png)
 ![Luigi UI - 3](/luigiui-screenshot-1721875797026.png)
-
-## Dashboard (created via Power BI)
-![Dashboard created via Power BI](/close-encounters-2-1.png)
