@@ -850,3 +850,377 @@ This progress looks :) because there were no failed tasks or missing dependencie
 
 ===== Luigi Execution Summary =====
 
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/parameter.py:296: UserWarning: Parameter "fields" with value "{'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl) is complete
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if LoadDataTask() is complete
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/worker.py:426: UserWarning: Task LoadDataTask() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl) is complete
+INFO: Informed scheduler that task   LoadDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 6
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+[1m>>>>> STEP 1 : GETTING RAW DATA [0m
+Status code:  200
+Data Validation:
+ > Data shape:  (7605, 13)
+ > Data fields-types: {'des': dtype('O'), 'orbit_id': dtype('O'), 'jd': dtype('O'), 'cd': dtype('O'), 'dist': dtype('O'), 'dist_min': dtype('O'), 'dist_max': dtype('O'), 'v_rel': dtype('O'), 'v_inf': dtype('O'), 't_sigma_f': dtype('O'), 'h': dtype('O'), 'diameter': dtype('O'), 'diameter_sigma': dtype('O')}
+ > Columns that should be dropped:
+      01. des
+      02. orbit_id
+      03. jd
+      04. cd
+      05. dist
+      06. dist_min
+      07. dist_max
+      08. v_rel
+      09. v_inf
+      10. h
+ > Columns that should have exist:
+      01. name
+      02. close_approach_time
+      03. distance
+      04. minimum_distance
+      05. maximum_distance
+      06. relative_velocity
+      07. relative_velocity_at_massless_earth
+      08. absolute_magnitude
+ > Mismatch type columns:
+      01. 'diameter' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+ > Missing value columns:
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 5
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'})
+[1m>>>>> STEP 2 : SELECT SOME FIELDS FROM RAW DATA [0m
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('O'), 'distance': dtype('O'), 'minimum_distance': dtype('O'), 'maximum_distance': dtype('O'), 'relative_velocity': dtype('O'), 'relative_velocity_at_massless_earth': dtype('O'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('O'), 'diameter': dtype('O'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > Mismatch type columns:
+      01. 'close_approach_time' columns should be in '<class 'numpy.dtypes.DateTime64DType'>'!
+      02. 'distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      03. 'minimum_distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      04. 'maximum_distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      05. 'relative_velocity' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      06. 'relative_velocity_at_massless_earth' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      07. 'absolute_magnitude' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      08. 'diameter' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'})
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/parameter.py:296: UserWarning: Parameter "fields" with value "{'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+[1m>>>>> STEP 3 : FORMAT COLUMNS TYPES [0m
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('<M8[ns]'), 'distance': dtype('float64'), 'minimum_distance': dtype('float64'), 'maximum_distance': dtype('float64'), 'relative_velocity': dtype('float64'), 'relative_velocity_at_massless_earth': dtype('float64'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('float64'), 'diameter': dtype('float64'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > All column types match the requirements ✔
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+[1m>>>>> STEP 4 : CLEAN DATA FROM MISSING VALUES AND DUPLICATES [0m
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('<M8[ns]'), 'distance': dtype('float64'), 'minimum_distance': dtype('float64'), 'maximum_distance': dtype('float64'), 'relative_velocity': dtype('float64'), 'relative_velocity_at_massless_earth': dtype('float64'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('float64'), 'diameter': dtype('float64'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > All column types match the requirements ✔
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+ > There is no duplicated data ✔
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl)
+[1m>>>>> STEP 5 : TRANSFORM DATA TO READY-TO-LOAD DATA [0m
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) running   LoadDataTask()
+[1m>>>>> STEP 6 : LOAD DATA TO DATA WAREHOUSE [0m
+INFO: [pid 304550] Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) done      LoadDataTask()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   LoadDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=6325821889, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=304550) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 6 tasks of which:
+* 6 ran successfully:
+    - 1 CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+    - 1 ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+    - 1 FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+    - 1 LoadDataTask()
+    - 1 SelectFieldsDataTask(...)
+    ...
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/parameter.py:296: UserWarning: Parameter "fields" with value "{'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl) is complete
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+DEBUG: Checking if LoadDataTask() is complete
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/worker.py:426: UserWarning: Task LoadDataTask() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl) is complete
+INFO: Informed scheduler that task   LoadDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if CleanDataTask(output_dir=./temp/cleaned_data.pkl) is complete
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   PENDING
+DEBUG: Checking if FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl) is complete
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   PENDING
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+DEBUG: Checking if SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}) is complete
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True) is complete
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   PENDING
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 6
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+[1m>>>>> STEP 1 : GETTING RAW DATA [0m
+Status code:  200
+Data Validation:
+ > Data shape:  (7605, 13)
+ > Data fields-types: {'des': dtype('O'), 'orbit_id': dtype('O'), 'jd': dtype('O'), 'cd': dtype('O'), 'dist': dtype('O'), 'dist_min': dtype('O'), 'dist_max': dtype('O'), 'v_rel': dtype('O'), 'v_inf': dtype('O'), 't_sigma_f': dtype('O'), 'h': dtype('O'), 'diameter': dtype('O'), 'diameter_sigma': dtype('O')}
+ > Columns that should be dropped:
+      01. des
+      02. orbit_id
+      03. jd
+      04. cd
+      05. dist
+      06. dist_min
+      07. dist_max
+      08. v_rel
+      09. v_inf
+      10. h
+ > Columns that should have exist:
+      01. name
+      02. close_approach_time
+      03. distance
+      04. minimum_distance
+      05. maximum_distance
+      06. relative_velocity
+      07. relative_velocity_at_massless_earth
+      08. absolute_magnitude
+ > Mismatch type columns:
+      01. 'diameter' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+ > Missing value columns:
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCloseEncountersDataTask_https___ssd_api__dc05d5367c   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 5
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'})
+[1m>>>>> STEP 2 : SELECT SOME FIELDS FROM RAW DATA [0m
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('O'), 'distance': dtype('O'), 'minimum_distance': dtype('O'), 'maximum_distance': dtype('O'), 'relative_velocity': dtype('O'), 'relative_velocity_at_massless_earth': dtype('O'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('O'), 'diameter': dtype('O'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > Mismatch type columns:
+      01. 'close_approach_time' columns should be in '<class 'numpy.dtypes.DateTime64DType'>'!
+      02. 'distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      03. 'minimum_distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      04. 'maximum_distance' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      05. 'relative_velocity' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      06. 'relative_velocity_at_massless_earth' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      07. 'absolute_magnitude' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+      08. 'diameter' columns should be in '<class 'numpy.dtypes.Float64DType'>'!
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      SelectFieldsDataTask(output_dir=./temp/selected_data.pkl, fields={'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'})
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   SelectFieldsDataTask___des____name____1e53530157   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+/home/nairkivm/close-encounters-etl-project/venv/lib/python3.10/site-packages/luigi/parameter.py:296: UserWarning: Parameter "fields" with value "{'des': 'name', 'cd': 'close_approach_time', 'dist': 'distance', 'dist_min': 'minimum_distance', 'dist_max': 'maximum_distance', 'v_rel': 'relative_velocity', 'v_inf': 'relative_velocity_at_massless_earth', 't_sigma_f': 't_sigma_f', 'h': 'absolute_magnitude', 'diameter': 'diameter', 'diameter_sigma': 'diameter_sigma'}" is not of type string.
+  warnings.warn('Parameter "{}" with value "{}" is not of type string.'.format(param_name, param_value))
+[1m>>>>> STEP 3 : FORMAT COLUMNS TYPES [0m
+DEBUG: Not all parameter values are hashable so instance isn't coming from the cache
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('<M8[ns]'), 'distance': dtype('float64'), 'minimum_distance': dtype('float64'), 'maximum_distance': dtype('float64'), 'relative_velocity': dtype('float64'), 'relative_velocity_at_massless_earth': dtype('float64'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('float64'), 'diameter': dtype('float64'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > All column types match the requirements ✔
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+      - diameter             columns : 99.55% (7571)
+      - diameter_sigma       columns : 99.58% (7573)
+ > There is no duplicated data ✔
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FormatFieldsTypeTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+[1m>>>>> STEP 4 : CLEAN DATA FROM MISSING VALUES AND DUPLICATES [0m
+Data Validation:
+ > Data shape:  (7605, 11)
+ > Data fields-types: {'name': dtype('O'), 'close_approach_time': dtype('<M8[ns]'), 'distance': dtype('float64'), 'minimum_distance': dtype('float64'), 'maximum_distance': dtype('float64'), 'relative_velocity': dtype('float64'), 'relative_velocity_at_massless_earth': dtype('float64'), 't_sigma_f': dtype('O'), 'absolute_magnitude': dtype('float64'), 'diameter': dtype('float64'), 'diameter_sigma': dtype('O')}
+ > No columns should be dropped ✔
+ > All requirements columns is exists ✔
+ > All column types match the requirements ✔
+ > Missing value columns:
+      - relative_velocity_at_massless_earth columns : 0.09% (7   )
+ > There is no duplicated data ✔
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   CleanDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl)
+[1m>>>>> STEP 5 : TRANSFORM DATA TO READY-TO-LOAD DATA [0m
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      TransformDataTask(output_dir=./temp/transformed_data_2024-07-26.pkl)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   TransformDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) running   LoadDataTask()
+[1m>>>>> STEP 6 : LOAD DATA TO DATA WAREHOUSE [0m
+INFO: [pid 309623] Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) done      LoadDataTask()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   LoadDataTask__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=8087940306, workers=1, host=ACER-ASPIRE-3, username=nairkivm, pid=309623) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 6 tasks of which:
+* 6 ran successfully:
+    - 1 CleanDataTask(output_dir=./temp/cleaned_data.pkl)
+    - 1 ExtractCloseEncountersDataTask(output_dir=./temp/raw_data.pkl, url=https://ssd-api.jpl.nasa.gov/cad.api?date-min=2019-01-01&date-max=2023-12-31&diameter=True)
+    - 1 FormatFieldsTypeTask(output_dir=./temp/formatted_data.pkl)
+    - 1 LoadDataTask()
+    - 1 SelectFieldsDataTask(...)
+    ...
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
